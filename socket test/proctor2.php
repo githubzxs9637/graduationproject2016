@@ -23,7 +23,7 @@ $tcp = getprotobyname("tcp");
 
 $socket = socket_create(AF_INET, SOCK_STREAM, $tcp)or die("Could not create socket\n"); 
 
-socket_bind($socket, '130.166.68.119', 12345)or die("Could not bind to socket\n");    
+socket_bind($socket, '127.0.0.1', 8000)or die("Could not bind to socket\n");    
    
 socket_listen($socket,3)or die("Could not set up socket listener\n");     
   
